@@ -126,12 +126,12 @@ margin-bottom: 15px;
   right: -50%;
   left: -50%;
   position: absolute;
-  background: url("../pineappleparkweb/IMAGES/outside.jpg") center center / 40vw auto;
+  background: url("IMAGES/outside.jpg") center center / 40vw auto;
     
 }
 
 .accordion .card:nth-child(2):before {
-  background: url("../pineappleparkweb/IMAGES/inside.jpg") center center / 40vw auto;
+  background: url("IMAGES/inside.jpg") center center / 40vw auto;
 }
 
 .accordion .card:hover {
@@ -150,7 +150,7 @@ margin-bottom: 15px;
     margin: 0;
     display: inline-block;
     justify-content: center;
-        background-image: url(../pineappleparkweb/IMAGES/pppattern-faded.png);
+        background-image: url(IMAGES/pppattern-faded.png);
         background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -381,19 +381,19 @@ border-radius: 10px 15px 10px 15px;
 
 }
 .slide1 {
-  background: url("../pineappleparkweb/IMAGES/icecream.jpg")
+  background: url("IMAGES/icecream.jpg")
 }
 .slide2 {
-  background: url("../pineappleparkweb/IMAGES/softserve.jpg")
+  background: url("IMAGES/softserve.jpg")
 }
 .slide3 {
-  background: url("../pineappleparkweb/IMAGES/boba.jpg")
+  background: url("IMAGES/boba.jpg")
 }
 .slide4 {
-  background: url("../pineappleparkweb/IMAGES/crepe.jpg")
+  background: url("IMAGES/crepe.jpg")
 }
 .slide5 {
-  background: url("../pineappleparkweb/IMAGES/acai.jpg")
+  background: url("IMAGES/acai.jpg")
 }
 .slide:hover {
   width: 50%
@@ -666,7 +666,7 @@ border-radius: 10px 15px 10px 15px;
     width: 100%;
     height: 50%;
     border-radius: 15px 5px 5px 10px;
-    background-image:url(../pineappleparkweb/IMAGES/pppattern-bright.png);
+    background-image:url(IMAGES/pppattern-bright.png);
     background-repeat: repeat;
     background-size: cover;
     margin: 5px 5px;
@@ -695,7 +695,7 @@ hr{
 
 .sidepic {
     float: left;
-    background-image:url(../pineappleparkweb/IMAGES/trans-items.png);
+    background-image:url(IMAGES/trans-items.png);
     background-repeat: no-repeat;
     width: 30%;
     height: 700px;
@@ -705,7 +705,7 @@ hr{
 
 /* FORM */
 #contactform {
-    background-image: url(../pineappleparkweb/IMAGES/pppattern-bright.png);
+    background-image: url(IMAGES/pppattern-bright.png);
     width: 100%;
     height: 500px;
     margin-top: 20px;
@@ -882,7 +882,7 @@ textarea {
 }
 
 .sidebar-images {
-    background-image:url(../pineappleparkweb/IMAGES/sidebar1.png);
+    background-image:url(IMAGES/sidebar1.png);
     background-repeat: no-repeat;
     width: 150px;
     height: 100vh;
@@ -892,7 +892,7 @@ textarea {
 }
 
 .sidebar-images2 {
-    background-image:url(../pineappleparkweb/IMAGES/sidebar2.png);
+    background-image:url(IMAGES/sidebar2.png);
     background-repeat: no-repeat;
     width: 150px;
     height: 100vh;
@@ -941,7 +941,7 @@ textarea {
     
 }
 .secondmenu-food{
-    background-image:url(../pineappleparkweb/IMAGES/pppattern-faded.png);
+    background-image:url(IMAGES/pppattern-faded.png);
     width: 100%;
     height: 50px;
     justify-content: center;
