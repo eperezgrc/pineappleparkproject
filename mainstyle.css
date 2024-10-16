@@ -1,0 +1,1215 @@
+/*COLOR PALETTE
+#fff - WHITE - background
+#000 - BLACK - text 
+#231F20 - pattern black
+#F5CD64 - PALE YELLOW - text on dark bg
+#FBBC14 - RICH YELLOW - banners , borders
+#ED2643 - RED PINK - secondary text , icons , button
+#0D9BA3 - TEAL - banners , boxes, borders
+
+*/
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+      color: #cdcdcd;
+      font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+/* HEADERS , TEXT, LINKS */
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cantarell-regular {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cantarell-bold {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cantarell-regular-italic {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cantarell-bold-italic {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.diagonalslider h1{
+    color: tomato;
+}
+a {
+    color: #0083e8;
+}
+
+a:hover {
+    color:yellow;
+}
+
+a.focus:link, a.focus:visited {
+    color: tomato;
+}
+
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+
+/* IMAGES */
+
+.diagonalslider {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+margin-bottom: 15px;
+    
+}
+
+.accordion {
+  display: flex;
+  height: 25rem;
+  width: 130%;
+  margin-left: -15%;
+  gap: 0.5em;
+    
+}
+
+.accordion .card {
+  display: flex;
+  position: relative;
+  flex: 1;
+  align-items: center;
+  overflow: hidden;
+  transform: skew(-15deg);
+  transition: all .5s ease-in-out;
+}
+
+.accordion .card h1 {
+  text-align: center;
+  width: 100%;
+  transform: skew(15deg);
+    font-size: 30px;
+}
+
+.accordion .card:before {
+  transform: skew(15deg);
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: -50%;
+  left: -50%;
+  position: absolute;
+  background: url("../pineappleparkweb/IMAGES/outside.jpg") center center / 40vw auto;
+    
+}
+
+.accordion .card:nth-child(2):before {
+  background: url("../pineappleparkweb/IMAGES/inside.jpg") center center / 40vw auto;
+}
+
+.accordion .card:hover {
+  flex: 3;
+}
+
+
+/* PRE BURGER */
+#topbanner {
+    max-width: 1800px;
+    height: 150px;
+    width: 100%;
+    height: auto;
+    background-color: indigo;
+    padding: 10px 10px;
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+        background-image: url(../pineappleparkweb/IMAGES/pppattern-faded.png);
+        background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+        margin-right: 200px;
+    }
+
+.container {
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    width: 1000px;
+    max-width: 1000px;
+    height: auto;
+    margin: 0;
+    float: right;
+    font-family: "Fjalla One", sans-serif;
+    color: #ED2643;
+    text-shadow: #000 2px 0 10px;
+    font-size: 70px;
+}
+
+
+.container p {
+    font-size: 18px;
+    font-weight: 200px;
+    font-family: "Cantarell", sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.btn-order {
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-family: "Cantarell", sans-serif;
+}
+
+.btn-order {
+    font-family: "Cantarell", sans-serif;
+    color: #ED2643; 
+    border: 2px solid #FBBC14;
+    border-radius: 0px 15px 10px 15px;
+    font-size: 15px;
+}
+
+.btn-order:hover {
+  background-color: #FBBC14;
+border-radius: 10px 15px 10px 15px;
+  color: white;
+}
+
+.btn-order a{
+    text-decoration: none;
+    color: tomato;
+}
+
+.btn-order a:hover {
+    text-decoration: none;
+    background-color: #FBBC14;
+    color:white;
+}
+
+/* HAMBURGER */
+#menuToggle
+{
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  margin-left: -35px;
+  -webkit-user-select: none;
+  user-select: none;
+    font-family: "Cantarell", sans-serif;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #F5CD64;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: tomato;
+  border-radius: 5px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{transform-origin: 0% 0%;}
+
+#menuToggle span:nth-last-child(2)
+{transform-origin: 0% 100%;}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 100px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #000;
+  list-style-type: none;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    border-radius: 15px 15px;
+}
+
+#menu li
+{
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* HOVER EFFECTS FEELING SNACKISH */
+
+.snackish-bar p {
+    font-size: 15px;
+    font-family: "Cantarell", sans-serif;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.snackish-bar p a{
+    text-decoration: none;
+    color: #000;
+    border: solid 2px #ED2643;
+    border-radius: 10px 10px;
+    margin: 20px 20px;
+    padding: 5px;
+}
+.snackish-head {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    float: left;
+    font-size: 40px;
+    color: #ED2643;
+    font-family: "Fjalla One", sans-serif;
+    margin: 25px 55px 55px 55px;
+
+}
+
+.slide .content h2{
+    color: tomato;
+    font-size: 20px;
+    font-family: "Fjalla One", sans-serif;
+    margin-bottom: -15px;
+}
+.slider-wrap {
+  width: 60%;
+  height: 40vh;
+  background: #ccc;
+  display: flex;
+  float: left;
+  overflow: hidden
+}
+.slide {
+  width: 20vw;
+  border-right: 1px solid #000;
+  transition: 0.5s;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left
+
+}
+.slide1 {
+  background: url("../pineappleparkweb/IMAGES/icecream.jpg")
+}
+.slide2 {
+  background: url("../pineappleparkweb/IMAGES/softserve.jpg")
+}
+.slide3 {
+  background: url("../pineappleparkweb/IMAGES/boba.jpg")
+}
+.slide4 {
+  background: url("../pineappleparkweb/IMAGES/crepe.jpg")
+}
+.slide5 {
+  background: url("../pineappleparkweb/IMAGES/acai.jpg")
+}
+.slide:hover {
+  width: 50%
+}
+.slide .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.6);
+    font-size: 15px;
+    font-family: "Cantarell", sans-serif;
+  
+}
+.slide:hover .content {
+  bottom: 0;
+  transition: 0.5s;
+  transition-delay: 0.3s
+}
+
+
+/* HOVER - NAV BAR MIDDLE */
+
+.wigglecontainer {
+	display: inline-block;
+    text-align: center;
+    text-decoration: none;
+	padding: 10px;
+	background: rgba(000, 000, 000, 0.3);
+	border-radius: 10px;
+	max-width: 85%;
+    width: 800px;
+	box-sizing: border-box;
+}
+
+.btn {
+	background-color: #FBBC14;
+	color: black;
+	border: none;
+	padding: 15px 30px;
+	cursor: pointer;
+	font-size: 22px;
+	border-radius: 0px 10px 10px 20px;
+	transition: all 0.3s;
+    font-family: "Cantarell", sans-serif;
+    font-size: 15px;
+
+}
+
+.btn:hover {
+    background-color: #0D9BA3;
+    color: #fff;
+}
+
+
+.wiggle:hover {
+     animation: wiggle 0.5s;
+    border-radius: 10px 15px 10px 15px;
+}
+
+.wiggle:active {
+    animation: wiggle 0.5s;
+    color: tomato;
+    background-color: mediumpurple;
+}
+
+
+@keyframes wiggle {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-5deg);
+	}
+	75% {
+		transform: rotate(5deg);
+	}
+}
+
+/* HOVER EFFECTS , ABOUT US PAGE MENU */
+
+#about-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 5px;
+}
+:root {
+        --drawn-body: #221f2f;
+    }
+    .drawn_card {
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 400px;
+    }
+    .drawn_card img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .drawn_content {
+        position: absolute;
+        bottom: -300px;
+        padding: 10px;
+        height: 80%;
+        color: #F5CD64;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+        clip-path: polygon(100% 0%, 50% 9%, 0% 10%, 0% 100%, 100% 100%);
+        transition: ease-in-out 1.5s;
+    }
+
+    .drawn_content h3 {
+        margin: 15px 0px;
+        color: #0D9BA3;
+        font-family: "Fjalla One", sans-serif;
+    }
+    .drawn_content p {
+        margin-bottom: 5px;
+    }
+
+    .drawn_card:hover .drawn_content {
+        bottom: 0px;
+        transition: ease-in 0.5s;
+    }
+
+
+/* 3RD BANNER HOURS/LOCATION*/
+
+
+#container2 {
+    display: flex;
+    position: relative;
+    float: left;
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    height: 800px;
+    
+ 
+}
+
+.logomain {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+
+.services-para {
+    display: flex;
+    flex: auto;
+    font-size: 18px;
+    background-color: white;
+    border: 2px solid #0D9BA3;
+    border-radius: 12px 0px 12px 0px;
+    color: black;
+    width: 35%;
+    max-width: 300px;
+    height: 50%;
+    padding: 10px 10px;
+    margin: auto;
+    justify-content: center;
+}
+.services-titles {
+    color: #FBBC14;
+    font-size: 40px;
+    padding: 10px 10px;
+    display: flex;
+    background-color: #0D9BA3;
+    width: 300px;
+    border: 2px solid #FBBC14;
+    border-radius: 10px 2px 2px 10px;
+    justify-content: center;
+    margin: auto;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: tomato;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay {
+  width: 100%;
+  left: 0;
+
+}
+
+.herosub {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+    word-wrap:normal;
+}
+
+#secondbanner {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #0D9BA3;
+    padding: 10px 10px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+/* ABOUT US HEAD SECTION */
+
+#about-us {
+   margin: 0;
+    padding: 20px;
+    width: 50%;
+    display: inline-block;
+
+}
+
+.about-summary {
+    justify-content: center;
+    float: left;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+.about-summary h1 {
+    color: #FBBC14;
+    text-align: center;
+    background-color: #0D9BA3;
+    border-radius: 0px 5px 5px 10px;
+    padding: 5px 5px;
+}
+
+.about-summary p {
+    color: #0D9BA3;
+    font-size: 22px;
+    text-align: center;
+}
+
+.DDbanner {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 5px 5px 10px;
+    background-image:url(../pineappleparkweb/IMAGES/pppattern-bright.png);
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 5px 5px;
+    padding: 5px;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.DDbanner h4 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 7px  black;
+}
+
+hr{
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+    border: #0D9BA3 1px solid;
+    border-radius: 10px 10px;
+}
+/* ABOUT US IMAGE */
+#sideimage {
+    margin: 0;
+}
+
+.sidepic {
+    float: left;
+    background-image:url(../pineappleparkweb/IMAGES/trans-items.png);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 700px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* FORM */
+#contactform {
+    background-image: url(../pineappleparkweb/IMAGES/pppattern-bright.png);
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+.formbody { 
+    background-color: rgb(0,0,0, 0.7);
+    width: 100%;
+    justify-content: center;
+    max-width:400px; 
+    margin:50px auto; 
+    padding: 20px 20px;
+    border-radius: 15px 15px;
+}
+
+.feedback-input {
+  color: #fff;
+  font-weight:500;
+  font-size: 18px;
+    font-family:sans-serif;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: rgb(0,0,0);
+  border:2px solid #0D9BA3;
+  transition: all 0.8s;
+  padding: 15px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { 
+    border:2px solid #FBBC14; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: sans-serif;
+  width: 100%;
+  background:#0D9BA3;
+  border-radius:5px;
+  border:0;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+    background:#FBBC14;
+    color:Black;
+}
+
+/* REVIEWS */
+
+#review-section {
+    background-color: white;
+    font-family: "Cantarell", sans-serif;
+}
+.review-box {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 20px;
+    margin-left: 70px;
+    padding: 10px 10px;
+}
+
+.review-box h1 {
+    color: #000;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+.review-box b{
+    color: #ED2643;
+    font-family: "Fjalla One", sans-serif;
+}
+.review-box hr {
+    border: 2px solid gold;
+    background-color: gold;
+    width: 20%;
+}
+
+.review-box p {
+    color: #0D9BA3;
+    
+}
+
+.review-icons{
+    display: inline-block;
+    justify-content: center;
+    color: hotpink;
+}
+
+.review-icons img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    font-family: "Fjalla One", sans-serif;
+    opacity: 0.5;
+}
+
+.review-icons:hover {
+    color: lightpink;
+    cursor: default;
+}
+
+.review-icons img:hover {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    font-family: "Fjalla One", sans-serif;
+    opacity: 1.0;
+}
+
+.review-bar {
+    width: 70%;
+    height: 185px;
+    background-color: rgba(56, 165, 155, 0.55);
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: block;
+    justify-content: center;
+    border-radius: 15px 5px 15px 5px;
+    border: 5px solid rgba(56, 165, 155, 0.55);
+    
+}
+
+.re-hours {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.re-hours h4 {
+    color: #000;
+    font-size: 35px;
+    font-family: "Fjalla One", sans-serif;
+    margin-right: 10px;
+    }
+
+.re-hours img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 5px 5px;
+}
+
+.re-graph {
+    width: 70%;
+    height: 180px;
+    display: inline-block;
+    justify-content: center;
+    font-size: 16px;
+    margin: 5px 5px;
+}
+
+.re-graph p {
+    color: white;
+}
+
+.sidebar-images {
+    background-image:url(../pineappleparkweb/IMAGES/sidebar1.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100vh;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+
+.sidebar-images2 {
+    background-image:url(../pineappleparkweb/IMAGES/sidebar2.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100vh;
+    display: block;
+    float: right;
+}
+
+
+/* MENU STUFF */
+
+.menu-image {
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    left: 80%;
+
+}
+
+#menu-page {
+    display: block;
+    background-color: #000;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px 15px 0px 15px;
+}
+
+.firstmenu-food{
+    background-color: #0D9BA3;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.firstmenu-food h1{
+    font-family: "Fjalla One", sans-serif;
+    color: #F5CD64;
+    justify-content: center;
+    text-align: center;
+    margin: -5px;
+    padding: 10px 10px 10px 10px;
+    font-size: 40px;
+    
+}
+.secondmenu-food{
+    background-image:url(../pineappleparkweb/IMAGES/pppattern-faded.png);
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+.menu-wrapper{
+  width:100%;
+  padding:10px 10px;
+  box-sizing:border-box;
+  min-height:100vh;
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+  justify-content:center;
+    
+}
+  
+.menu-category{
+    padding:1em 2em;
+    max-width:800px;
+    width: 80%;
+    background:rgba(98, 98, 98, 0.7);
+    border-radius: 0px 10px 20px 20px;
+    margin: 5px;
+}
+
+.menu-category:hover {
+    background-color: rgba(89, 89, 89, 0.4);
+    transition-timing-function: ease;
+    transition: 1.2s;
+}
+.menu-category h2{
+      color:#FBBC14;
+    font-family: "Fjalla One", sans-serif;
+      margin:0;
+    }
+    
+.menu-item{
+      padding:1em;
+      box-sizing:border-box;
+      transition:all .3s;
+    color: rgba(243, 229, 158, 0.8);
+    font-family: "Cantarell", sans-serif;
+}
+.menu-item:hover{
+        background:rgba(135, 189, 181, 0.8);
+        border-radius:.5em;
+    color: rgba(251, 247, 221, 1);
+      }
+.item-name{
+        font-weight:400;
+         font-family: "Fjalla One", sans-serif;
+    font-size: 22px;
+      }
+.price-name-wrapper{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:space-between;
+        border-bottom:.15em dotted #ddd;
+}
+.item-name{
+          display:inline-block;
+          width:100%;
+          max-width:40em;
+          padding-right:2em;
+        }
+.item-price{
+            display:inline-block;
+            width:auto;
+            font-size: 20px;
+            font-family: "Fjalla One", sans-serif;
+            color: turquoise;
+
+    }
+
+/*MISC PAGE */
+
+.misc-holder {
+    background-color: white;
+    max-width: 1000px;
+    width: 2000px;
+    height: 100vh;
+    justify-content: center;
+}
+
+.misc-images {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: 15px 15px;
+}
+
+/* FOOTER STUFF */
+
+.footer {
+    margin: 20px 0px 20px;
+    padding: 10px 10px;
+    background-color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    color: #ED2643;
+    display: block;
+    justify-content: center;
+}
+
+.socials {
+    margin: 5px 5px;
+    padding: 0px 0px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer li {
+    display: inline-block; 
+    padding: 0 10px;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+
+.footer .copyright {
+    margin-top: 0px;
+    margin: 5px 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #FBBC14;
+    margin-bottom: 0;
+    display: flex;
+    flex: auto;
+}
+.footer .footer-break{
+  height:1px;
+  border-width:0;
+  color:gray;
+  background-color:#FBBC14;
+    }
+
+.fa {
+  padding: 20px 20px;
+  font-size: 30px;
+  width: 50px;
+    height: 20%;
+  text-align: center;
+  text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+}
+
+.fa:hover {
+  opacity: white 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #213A66;
+  color: white;
+    border-radius: 10px 10px;
+}
+
+/* Yelp */
+.fa-yelp {
+  background: #F2CCCC;
+  color: white;
+    border-radius: 10px 10px;
+}
+
+/* Insta */
+.fa-instagram {
+  background: #F5CD64;
+  color: white;
+    border-radius: 10px 10px;
+}
+
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+/* BUTTONS */
+.btn-butt {
+    border: none;
+    border-radius: 10px;
+    padding: 4px 10px;
+    width: 20%;
+    height: 30%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+
+.btn-butt {
+    color: #0D9BA3; 
+    border: 2px solid #F5CD64;
+    border-radius: 0px 15px 10px 15px;
+    font-family: "Cantarell", sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.btn-butt:hover {
+  background-color: #F5CD64;
+  color: #000;
+    border-radius: 10px 15px 10px 15px;
+}
+
+.btn-review {
+    border-radius: 0px 15px 10px 15px;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 18px;
+    transition-duration: 0.2s;
+    border: solid #FBBC14;
+    background-color: #FBBC14;
+    float: right;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0px 20px 20px 0px;
+    font-family: "Cantarell", sans-serif;
+}
+
+.btn-review a {
+    text-decoration: none;
+    color: #000;
+}
+.btn-review:hover {
+    background-color: #0D9BA3;
+  color: white;
+    transition-duration: 0.7s;
+    border: solid black;
+}
+
+.btn-review a:hover {
+  color: white;
+}
